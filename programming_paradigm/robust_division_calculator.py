@@ -2,8 +2,8 @@ def safe_divide(numerator, denominator):
     try:
         numerator = float(numerator)
         denominator = float(denominator)
-        
-        if denominator == 0: 
+
+        if denominator or numerator == 0: 
             print("Cannot divide by zero")
             return None
         else:
